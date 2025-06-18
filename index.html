@@ -21,16 +21,23 @@
    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
      <a class="text-2xl font-semibold text-green-400" href="#">
-      RANZCLOUD GTA SA-MP STORE
+      ADVENTURE HOSTING
      </a>
      <ul class="hidden md:flex space-x-8 text-white font-medium">
       <li>
-       <a class="hover:text-green-400 transition" href="#products">
+       <a class="hover:text-green-400 transition" href="#SA:MP">
         Produk
        </a>
       </li>
       <li>
-       <a class="hover:text-green-400 transition" href="#order">
+       <a class="hover:text-green-400 transition" href="#order Via dc">
+        Order Via Discord
+       </a>
+      </li>
+      <li>
+      <a class="hover:text-green-400 transition" href="#order">
+        <i class="fab fa-whatsapp mr-1">
+       </i>
         Order Via WhatsApp
        </a>
       </li>
@@ -50,17 +57,30 @@
     <div class="hidden md:hidden" id="mobile-menu">
      <ul class="flex flex-col space-y-4 py-4 text-white font-medium">
       <li>
-       <a class="block px-2 hover:text-green-400 transition" href="#products">
-        Produk
+       <a class="block px-2 hover:text-green-400 transition" href="#SA:MP">
+  <i class="fas fa-envelope">
+       </i>
+     Produk
        </a>
       </li>
       <li>
-       <a class="block px-2 hover:text-green-400 transition" href="#order">
-        Order Via WhatsApp
+       <a class="block px-2 hover:text-green-400 transition" href="#order Via dc">
+        <i class="fab fa-discord mr-1">
+       </i>
+       Order Via Discord
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-green-400 transition" href="#order">
+        <i class="fab fa-whatsapp mr-1">
+       </i>
+Order Via WhatsApp
        </a>
       </li>
       <li>
        <a class="block px-2 hover:text-green-400 transition" href="#contact">
+       <i class="fas fa-phone">
+      </i>
         Kontak
        </a>
       </li>
@@ -74,111 +94,274 @@
      Daftar Produk Hosting Sa-mp Terbaik
     </h1>
     <p class="text-lg sm:text-xl max-w-3xl mx-auto text-gray-200">
-     Pilih paket hosting sa-mp yang sesuai dengan kebutuhan Anda dan lakukan pemesanan mudah melalui WhatsApp.
+     Rasakan performa luar biasa dengan dukungan prosesor AMD Ryzen 9 5950X, perlindungan Anti-DDoS gcore, Premium memastikan server Anda stabil, cepat, dan aman setiap saat. Dengan lokasi Data Center Singapura, kami menjamin latensi rendah untuk pengalaman bermain terbaik, baik untuk komunitas roleplay.
     </p>
    </section>
-   <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20" id="products">
-    <article class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-6 flex flex-col shadow-lg hover:shadow-green-400 transition-shadow">
-     <img alt="Cloud Hosting, Cpu 300% Ram 30Gb Disk 40Gb 50 Slot Player" class="rounded-md mb-4 object-cover w-full h-48" height="250" src="https://iili.io/3barjzG.md.png" width="400"/>
-     <h2 class="text-2xl font-semibold text-green-400 mb-2">
-      PAKET HOSTING SA-MP VSAMLL
-     </h2>
-     <p class="text-gray-300 flex-grow">
-     Kapasitas Hosting, 300% Cpu, 25GB Ram, 30GB Disk, 50 SLOT Permain, Windows/Linux, Database on, Exp 30day.
-     </p>
-     <p class="mt-4 font-bold text-lg text-green-300">
-      Rp 5.000
-     </p>
-     <a class="mt-6 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition" href="https://wa.me/6285874125406?text=Saya%20ingin%20memesan%20paket%20Vsmall%20Hosting" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp mr-2 text-xl">
-      </i>
-      Order via WhatsApp
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  * {
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1E90FF;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #6b4a90cc;
+  }
+  main {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 1.8rem;
+  }
+  .product-card {
+    background: #f9f6ff;
+    border-radius: 14px;
+    padding: 1.8rem 1.6rem 2rem;
+    box-shadow: 0 6px 18px rgba(78, 42, 132, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(78,42,132,0.5);
+  }
+  .product-title {
+    font-size: 2.1rem;
+    font-weight: 950;
+    margin-bottom: 0.6rem;
+    color: #66CC00;
+  }
+  .product-desc {
+    font-size: 1rem;
+    color: #6b5ca5;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+  .product-price {
+    font-size: 1.3rem;
+    font-weight: 750;
+    color: #a32a2a;
+    margin-bottom: 1.6rem;
+  }
+  label {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #4e2a84;
+    display: block;
+  }
+  input.username-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1.8px solid #b7a2cf;
+    outline: none;
+    margin-bottom: 1.4rem;
+    transition: border-color 0.3s ease;
+  }
+  input.username-input:focus {
+    border-color: #663399;
+    box-shadow: 0 0 6px #8f79bd;
+    }
+  input.password-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1.8px solid #b7a2cf;
+    outline: none;
+    margin-bottom: 1.4rem;
+    transition: border-color 0.3s ease;
+  }
+  input.password-input:focus {
+    border-color: #663399;
+    box-shadow: 0 0 6px #8f7
+    }
+  input.plugins-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1.8px solid #b7a2cf;
+    outline: none;
+    margin-bottom: 1.4rem;
+    transition: border-color 0.3s ease;
+  }
+  input.plugins-input:focus {
+    border-color: #663399;
+    box-shadow: 0 0 6px #8f7
+  }
+  .btn-wa {
+    background-color: #d32f2f;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(211,47,47,0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+    user-select: none;
+  }
+  .btn-wa:hover, .btn-wa:focus {
+    background-color: #9f1b1b;
+    box-shadow: 0 8px 25px rgba(159,27,27,0.8);
+    transform: translateY(-2px);
+  }
+  .btn-wa:active {
+    transform: translateY(1px);
+  }
+  footer {
+    margin-top: 3.5rem;
+    font-size: 0.9rem;
+    color: #9a90b4cc;
+  }
+  @media (max-width: 420px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+
+<header>
+  <h1>LIST SA:MP Budget & SA:MP Cloud ➭ Support Plugins .dll & .so  </h1>
+ <section class="mt-20 max-w-3xl mx-auto text-center" id<section class="mt-20 max-w-3xl mx-auto text-center" id="SA:MP">
+ <p><p>
+</header>
+  
+<main id="catalog-container">
+  <!-- Produk akan dirender oleh JS -->
+</main>
+
+
+<script>
+  // Ganti dengan nomor WhatsApp kamu (format internasional tanpa tanda '+')
+  const whatsappNumber = '6285874125406';
+ 
+
+  const katalog = [
+    { id: 1, nama: "SA:MP Budget 1", deskripsi: "30 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 20000 },
+    { id: 2, nama: "SA:MP Budget 2", deskripsi: "50 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 30000 },
+    { id: 3, nama: "SA:MP Budget 3", deskripsi: "100 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 70000 },
+    { id: 4, nama: "SA:MP Budget 4", deskripsi: "150 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 150000 },
+    { id: 5, nama: "SA:MP Budget 5", deskripsi: "200 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 180000 },
+    { id: 6, nama: "SA:MP Budget 6", deskripsi: "250 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 210000 },
+    { id: 7, nama: "SA:MP Budget 7", deskripsi: "300 Player Slots, Limited Cpu, Ulimitid Ram, 5Gb SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 250000 },
+    { id: 8, nama: "SA:MP Cloud 1", deskripsi: "100 Player Slots, Limited Cpu, Ulimitid Ram, Ulimitid SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 220000 },
+    { id: 9, nama: "SA:MP Cloud 2", deskripsi: "200 Player Slots, Limited Cpu, Ulimitid Ram, Ulimitid SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 320000 },
+    { id: 10, nama: "SA:MP Cloud 3", deskripsi: "300 Player Slots, Limited Cpu, Ulimitid Ram, Ulimitid SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 420000 },
+    { id: 11, nama: "SA:MP Cloud 4", deskripsi: "400 Player Slots, Limited Cpu, Ulimitid Ram, Ulimitid SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 500000 },
+    { id: 12, nama: "SA:MP Cloud 5", deskripsi: "500 Player Slots, Limited Cpu, Ulimitid Ram, Ulimitid SSD, Support Voice, Port Random, Plugins .dll & .so, Location Jakarta, Uptime 99,95%, DDoS Protection Gcore,Exp 1 Bulan.", harga: 600000 },
+    { id: 13, nama: "UP SLOTS PLAYER ", deskripsi: "UP SLOTS PLAYER 5 HARGANYA 7.000 DAN SETERUSNYA ", harga: 7000 },
+  ];
+
+  const container = document.getElementById('catalog-container');
+
+  katalog.forEach(item => {
+    const card = document.createElement('div');
+    card.classList.add('product-card');
+
+    // Format harga ke Rupiah (IDR)
+    const hargaFormatted = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(item.harga);
+     
+
+    card.innerHTML = `
+      <h2 class="product-title">${item.nama}</h2>
+      <p class="product-desc">${item.deskripsi}</p>
+      <div class="product-price">Harga: <strong>${hargaFormatted}</strong></div>
+      
+         <label for="username-${item.id}">Silahkan Bikin Username Untuk Hosting:</label>
+      <input type="text" id="username-${item.id}" name="username-${item.id}" class="username-input" placeholder="Username..." aria-label="Username untuk ${item.nama}" />
+      
+      <label for="password-${item.id}">Silahkan Bikin Password Untuk Hosting:</label>
+      <input type="text" id="password-${item.id}" name="password-${item.id}" class="password-input" placeholder="Password..." aria-label="Password untuk ${item.nama}" />
+     
+     
+      <button class="btn-wa" aria-label="Beli ${item.nama} lewat WhatsApp">Beli Sekarang</button>
+    `;
+
+    const btn = card.querySelector('.btn-wa');
+    const inputUsername = card.querySelector('input.username-input');
+    const inputPassword = card.querySelector('input.password-input');
+    const inputPlugins = card.querySelector('input.plugins-input');
+   
+    btn.addEventListener('click', () => {
+      const username = inputUsername.value.trim();
+      if (!username);
+      const password = inputPassword.value.trim();
+      if (!password);
+      const plugins = inputPlugins.value.trim();
+      if (!plugins) {
+        alert('Mohon isi duku username, password, Plugins.');
+        inputUsername.focus();
+        inputPassword.focus();
+        inputPlugins.focus();
+        return;
+      }
+      const pesan = `Halo, saya ingin membeli produk: "${item.nama}" dengan harga ${hargaFormatted} untuk username: ${username} dan password: ${password}. Mohon kirim payment atau qris.`;
+      const waLink = `https://wa.me/${6285874125406}?text=${encodeURIComponent(pesan)}`;
+      window.open(waLink, '_blank');
+    });
+
+    container.appendChild(card);
+  });
+</script>
+
+</body>
+</html>
      </a>
     </article>
-    <article class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-6 flex flex-col shadow-lg hover:shadow-green-400 transition-shadow">
-     <img alt="Cloud Hosting, Cpu 300% Ram 55Gb Disk 60Gb 100 Slot Player" class="rounded-md mb-4 object-cover w-full h-48" height="250" src="https://iili.io/3barjzG.md.png" width="400"/>
-     <h2 class="text-2xl font-semibold text-green-400 mb-2">
-      PAKET HOSTING SA-MP SMALL
-     </h2>
-     <p class="text-gray-300 flex-grow">
-     Kapasitas Hosting, 300% Cpu, 30Gb Ram, 35Gb Disk, 100 Slot Pemain, Windows/Linux, Port Voice, Database on, Exp 30day.
-    </p>
-     <p class="mt-4 font-bold text-lg text-green-300">
-      Rp 10.000
-     </p>
-     <a class="mt-6 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition" href="https://wa.me/6285874125406?text=Saya%20ingin%20memesan%20paket%20Small%20Hosting" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp mr-2 text-xl">
-      </i>
-      Order via WhatsApp
-     </a>
-    </article>
-    <article class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-6 flex flex-col shadow-lg hover:shadow-green-400 transition-shadow">
-     <img alt="Cloud Hosting, Cpu 300% Ram 66 Gb Disk 70 Gb 150 Slot Player" class="rounded-md mb-4 object-cover w-full h-48" height="250" src="https://iili.io/3barjzG.md.png" width="400"/>
-     <h2 class="text-2xl font-semibold text-green-400 mb-2">
-      PAKET HOSTING SA-MP MEDIUM
-     </h2>
-     <p class="text-gray-300 flex-grow">
-     Kapasitas Hosting, 300% Cpu, 50Gb Ram, 55Gb Disk, 150 Slot Pemain, Windows/Linux, Port Voice, Database on, Exp 30day.
-     </p>
-     <p class="mt-4 font-bold text-lg text-green-300">
-      Rp 15.000
-     </p>
-     <a class="mt-6 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition" href="https://wa.me/6285874125406?text=Saya%20ingin%20memesan%20paket%20Medium%20Hosting" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp mr-2 text-xl">
-      </i>
-      Order via WhatsApp
-     </a>
-    </article>
-    <article class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-6 flex flex-col shadow-lg hover:shadow-green-400 transition-shadow">
-     <img alt="WordPress Hosting Package optimized for WordPress websites with enhanced security and speed" class="rounded-md mb-4 object-cover w-full h-48" height="250" src="https://iili.io/3barjzG.md.png" width="400"/>
-     <h2 class="text-2xl font-semibold text-green-400 mb-2">
-      PAKET HOSTING SAMP HIGH
-     </h2>
-     <p class="text-gray-300 flex-grow">
-      Kapasitas Hosting, 300% Cpu, 60Gb Ram, 65Gb Disk, 200 Slot Pemain, Windows/Linux, Port Voice, Database on, Exp 30day.
-     </p>
-     <p class="mt-4 font-bold text-lg text-green-300">
-      Rp 20.000
-     </p>
-     <a class="mt-6 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition" href="https://wa.me/6285874125406?text=Saya%20ingin%20memesan%20paket%20High%20Hosting" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp mr-2 text-xl">
-      </i>
-      Order via WhatsApp
-     </a>
-    </article>
-    <article class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-6 flex flex-col shadow-lg hover:shadow-green-400 transition-shadow">
-     <img alt="Reseller Hosting Package with multiple cPanel accounts and white-label branding for resellers" class="rounded-md mb-4 object-cover w-full h-48" height="250" src="https://iili.io/3barjzG.md.png" width="400"/>
-     <h2 class="text-2xl font-semibold text-green-400 mb-2">
-      PAKET HOSTING SAMP SUPER HIGH
-     </h2>
-     <p class="text-gray-300 flex-grow">
-      Kapasitas Hosting, 300% Cpu, 75Gb Ram, 80Gb Disk, 250 Slot Pemain, Windows/Linux, Port Voice, Database on, Exp 30day.
-     </p>
-     <p class="mt-4 font-bold text-lg text-green-300">
-      Rp 25.000
-     </p>
-     <a class="mt-6 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition" href="https://wa.me/6285874125406?text=Saya%20ingin%20memesan%20paket%20SuperHigh%20Hosting" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp mr-2 text-xl">
-      </i>
-      Order via WhatsApp
-     </a>
-    </article>
-    <article class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-6 flex flex-col shadow-lg hover:shadow-green-400 transition-shadow">
-     <img alt="Dedicated Server Package with full root access and high performance for enterprise-level hosting" class="rounded-md mb-4 object-cover w-full h-48" height="250" src="https://iili.io/3barjzG.md.png" width="400"/>
-     <h2 class="text-2xl font-semibold text-green-400 mb-2">
-      PAKET HOST SAMP 2 BULAN MEDIUM
-     </h2>
-     <p class="text-gray-300 flex-grow">
-      Kapasitas Hosting, 300% Cpu, 55Gb Ram, 75Gb Disk, 100 Slot Pemain, Windows/Linux, Port Voice, Database on, Exp 60day.
-     </p>
-     <p class="mt-4 font-bold text-lg text-green-300">
-      Rp 30.000
-     </p>
-     <a class="mt-6 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition" href="https://wa.me/6285874125406?text=Saya%20ingin%20memesan%20paket%20Hosting%20Dua%20Bulan%20Medium" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp mr-2 text-xl">
-      </i>
-      Order via WhatsApp
-     </a>
+   </section>
+   <section class="max-w-3xl mx-auto bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-8 shadow-lg" id="order Via dc">
+    <h2 class="text-3xl font-semibold text-green-400 mb-6 text-center">
+     Cara Order Via Discord
+    </h2>
+    <ol class="list-decimal list-inside space-y-4 text-gray-300 text-lg">
+     <li>
+      Pilih paket hosting yang Anda inginkan dari daftar produk di atas.
+     </li>
+     <li>
+      Klik tombol hijau Ini 
+      <span class="inline-flex items-center bg-green-500 text-white px-2 py-1 rounded text-sm font-semibold" href="https://discord.gg/apvCMssk">
+       <i class="fab fa-discord mr-1">
+       </i>
+       Order Via Discord
+      </span>
+      untuk masuk store Discord nya.
+     </li>
+     <li>
+      Jika sudah gabung di discrod, Kalian jangan lupa Ambil Rolle di Chenel Adventure Hosting
+     </li>
+     <li>
+      Jika sudah, Kalian Scroll ke bawah sampai nemu Chenel Open Ticket, Kalian Create Ticket/Ambil Ticket Untuk Membeli Host.
+     </li>
+     <li>
+      Jika sudah create Ticket/Ambil Ticket, Kalian Tunggu Konfirmasi Admin Setelah konfirmasi, lakukan pembayaran sesuai instruksi yang diberikan.
+     </li>
+    </ol>
+   </section>
+   </a>
     </article>
    </section>
    <section class="max-w-3xl mx-auto bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-8 shadow-lg" id="order">
@@ -214,15 +397,15 @@
      Kontak Kami
     </h2>
     <p class="text-gray-300 mb-4">
-     Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami melalui WhatsApp atau email.
+     Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami melalui WhatsApp atau Discord.
     </p>
     <div class="flex justify-center space-x-8 text-green-400 text-2xl">
-     <a aria-label="WhatsApp" class="hover:text-green-600 transition" href="https://wa.me/6285874125406" rel="noopener noreferrer" target="_blank">
-      <i class="fab fa-whatsapp">
+     <a aria-label="Discord" class="hover:text-green-600 transition" href="https://discord.gg/apvCMssk" rel="noopener noreferrer" target="_blank">
+      <i class=" fab fa-discord">
       </i>
      </a>
-     <a aria-label="Email" class="hover:text-green-600 transition" href="mailto:support@Ranzcloud.com">
-      <i class="fas fa-envelope">
+     <a aria-label="Email" class="hover:text-green-600 transition" href="https://wa.me//6285874125406" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-WhatsApp">
       </i>
      </a>
      <a aria-label="Phone" class="hover:text-green-600 transition" href="tel:+6285874125406">
@@ -232,8 +415,8 @@
     </div>
    </section>
   </main>
-  <footer class="bg-black bg-opacity-70 backdrop-blur-sm text-center text-gray-400 py-6 mt-20">
-   © 2024 RanzCloud. All rights reserved.
+  <footer>
+   © 2024 Adventure Hosting. All rights reserved.
   </footer>
   <script>
    const menuBtn = document.getElementById('menu-btn');
@@ -244,4 +427,4 @@
     });
   </script>
  </body>
-</html>
+ </html>
